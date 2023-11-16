@@ -1,0 +1,6 @@
+<div *ngFor="let s of sith; index as i"> <!-- complete DOM including div will regenerate iteratively-->
+    <h1 style="color: rgb(199, 9, 9);">Greetings, {{s.name}}</h1>
+    <h3>Age: {{s.age}}</h3>
+    <h3>Strength: {{s.strength}}</h3>
+    <h5>Record {{i + 1}} of {{sith.length}}</h5>
+</div>

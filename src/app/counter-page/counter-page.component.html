@@ -1,0 +1,5 @@
+<app-tip>
+    <h5>Click button 11 times to see a message</h5> <!--this content can be viewed with the help of <ng-content> directive-->
+</app-tip>
+<app-counter-button [count]="count" (buttonClicked)="increaseCount()"></app-counter-button> <!--[] = a variable - to pass non-numeric value as INPUT, () = event/value-->
+<app-counter-message *ngIf="count>10"></app-counter-message>

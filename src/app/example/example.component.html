@@ -1,0 +1,9 @@
+<div *ngIf="name else elseBlock">
+    <h1>Hello {{name}}!</h1> <!--this is child tag, which is listening for value from parent tag-->
+    <!--'{{}}' checks for value in model-->
+    <h3>Age: {{age}}</h3>
+    <h3>Strength: {{strength}}</h3>
+</div>
+<ng-template #elseBlock> <!--what is ng-template and its other uses-->
+    <h1>Hello there!</h1>
+</ng-template>
