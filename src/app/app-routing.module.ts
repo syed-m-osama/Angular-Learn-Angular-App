@@ -10,11 +10,11 @@ import { UserInfoFormComponent } from './user-info-form/user-info-form.component
 import { UserInfoDisplayComponent } from './user-info-display/user-info-display.component';
 
 const routes: Routes = [
+  {path:"counter", component:CounterPageComponent},
   {path:"event-handling", component:EventHandlingComponent},
   {path:"example", component:ExampleComponent},
   {path:"multiple-choice", component:MultipleChoicePageComponent},
   {path:"sith-list", component:SithListComponent},
-  {path:"counter", component:CounterPageComponent},
   {path:"user-info-form", component: UserInfoFormComponent},
   {path:"user-info-display", component:UserInfoDisplayComponent},
   {path:"", redirectTo:"/counter", pathMatch:'full'}, //will work when path is specified
